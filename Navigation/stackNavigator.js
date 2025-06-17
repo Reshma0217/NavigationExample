@@ -51,13 +51,11 @@ const StackNavigator = () => {
 //deep link check cmd : adb shell am start -W -a android.intent.action.VIEW -d "myapp://details?name=Alice" com.navigationexample
 
     return (
-        <NavigationContainer  linking={linking}>
             <stack.Navigator initialRouteName='Home'>
                 <stack.Screen name='Home' component={HomeScreen} />
                 <stack.Screen name='Details' component={DetailScreen} /> 
             </stack.Navigator>
             
-        </NavigationContainer>
     );
 }
 
